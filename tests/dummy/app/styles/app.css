@@ -1,11 +1,10 @@
-button.m-button{
+button.m-button {
     cursor: pointer;
-    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
     padding: 6px 16px;
     font-size: 0.875rem;
     min-width: 64px;
     box-sizing: border-box;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.75;
@@ -15,7 +14,12 @@ button.m-button{
     outline: 0;
     border-color: transparent;
 }
-button.m-button:hover{
-    filter: brightness(80%);
+
+button.m-button.elevation-enabled {
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+button.m-button:hover {
+    filter: brightness(90%);
+    box-shadow: 1px 4px 2px -2px rgb(0 0 0 / 20%), 1px 3px 3px 1px rgb(0 0 0 / 14%), 1px 2px 6px 1px rgb(0 0 0 / 12%);
 }
