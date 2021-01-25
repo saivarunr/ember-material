@@ -11,12 +11,16 @@ button.m-button {
     border-radius: 4px;
     letter-spacing: 0.02857em;
     text-transform: uppercase;
-    outline: 0;
+    outline: none !important;
     border-color: transparent;
 }
 
 button.m-button.text {
     background-color: white;
+}
+button.m-button.outlined {
+    background-color: white;
+    box-shadow: 0 0 0 1px grey;
 }
 
 button.m-button.elevation-enabled {
@@ -24,7 +28,7 @@ button.m-button.elevation-enabled {
 }
 
 button.m-button:hover {
-    filter: brightness(90%);
+    filter: brightness(95%);
 }
 
 button.m-button.elevation-enabled:hover {
