@@ -1,17 +1,11 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
+// import ripplet from 'ripplet.js';
 
 export default class RippleGeneratorComponent extends Component {
-    @tracked
-    state = {
-        positions: []
-    }
-
-
     @action
     onClick(event) {
-        console.log("Clicked", event);
+        ripplet(event);
         if (this.args?.onClick) {
             this.args.onClick(...arguments);
         }

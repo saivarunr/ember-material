@@ -6,7 +6,7 @@ module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
     // Add options here
   });
-
+  app.import("node_modules/ripplet.js/umd/ripplet.js")
   /*
     This build file specifies the options for the dummy test app of this
     addon, located in `/tests/dummy`
