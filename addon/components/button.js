@@ -13,7 +13,9 @@ export default class ButtonComponent extends Component {
     @action
     onClick() {
         if (this.args?.onClick) {
-            this.args.onClick(event);
+            setTimeout(() => {
+                this.args.onClick(event);
+            }, 0);
         }
     }
 }
