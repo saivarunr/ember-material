@@ -1,3 +1,5 @@
-<button class="m-button {{if isElevated "elevation-enabled" "" }} {{this.variant}}">
-    {{yield}}
-</button>
+<RippleGenerator @onClick={{this.onClick}} as |onClick|>
+    <button class="m-button {{if isElevated " elevation-enabled" "" }} {{this.variant}}" onclick={{onClick}}>
+        {{yield}}
+    </button>
+</RippleGenerator>
