@@ -15,11 +15,18 @@ button.m-button {
     border-color: transparent;
 }
 
+button.m-button.text {
+    background-color: white;
+}
+
 button.m-button.elevation-enabled {
     box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 
 button.m-button:hover {
     filter: brightness(90%);
+}
+
+button.m-button.elevation-enabled:hover {
     box-shadow: 1px 4px 2px -2px rgb(0 0 0 / 20%), 1px 3px 3px 1px rgb(0 0 0 / 14%), 1px 2px 6px 1px rgb(0 0 0 / 12%);
 }
